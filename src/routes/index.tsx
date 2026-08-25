@@ -467,16 +467,16 @@ function Projects() {
 
 function ProjectCard({ project }: { project: Project }) {
   return (
-    <a
-      href={project.url}
-      target="_blank"
-      rel="noreferrer noopener"
-      className="group flex h-full flex-col rounded-2xl border border-border bg-card p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-lg hover:shadow-foreground/5"
-    >
+    <div className="group flex h-full flex-col rounded-2xl border border-border bg-card p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-lg hover:shadow-foreground/5">
       <div className="flex items-center justify-between">
-        <h3 className="font-display text-base font-semibold text-foreground group-hover:text-primary">
+        <a
+          href={project.url}
+          target="_blank"
+          rel="noreferrer noopener"
+          className="font-display text-base font-semibold text-foreground group-hover:text-primary"
+        >
           {project.name}
-        </h3>
+        </a>
         {project.stars > 0 && (
           <span className="inline-flex items-center gap-1 text-xs text-muted-foreground">
             ★ {project.stars}
@@ -498,14 +498,13 @@ function ProjectCard({ project }: { project: Project }) {
             href={project.homepage}
             target="_blank"
             rel="noreferrer noopener"
-            onClick={(e) => e.stopPropagation()}
             className="ml-auto font-medium text-primary hover:underline"
           >
             Live demo ↗
           </a>
         )}
       </div>
-    </a>
+    </div>
   );
 }
 
