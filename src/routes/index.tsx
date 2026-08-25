@@ -521,30 +521,31 @@ function ProjectCardSkeleton() {
 const EXPERIENCE = [
   {
     date: "September 2026 · Upcoming",
-    role: "Internship — Role & company to be confirmed",
-    company: "TBD",
+    role: "Virtual Intern — Full Stack & AI",
+    company: "Infosys Springboard",
     bullets: [
-      "Upcoming opportunity — details to be added.",
+      "Selected for Infosys Springboard Virtual Internship 7.0 — an 8-week programme covering AI, Python, Java, and full-stack development.",
+      "Will build real-world projects and earn an industry-recognised certificate on completion.",
     ],
     upcoming: true,
   },
   {
     date: "April – June 2026",
-    role: "Internship — Role & company to be confirmed",
-    company: "TBD",
+    role: "Data Analyst Intern",
+    company: "Bluestock Fintech",
     bullets: [
-      "Hands-on development experience during this period.",
-      "Company and responsibilities to be filled in.",
+      "Analysed stock-market datasets for Bluestock, a stock-market learning and analytics app.",
+      "Worked with financial data, built data visualisations, and supported analytics that help traders make better decisions.",
     ],
     upcoming: false,
   },
   {
     date: "June 2025",
-    role: "Internship — Role & company to be confirmed",
-    company: "TBD",
+    role: "Software Engineering Intern",
+    company: "Codmetric",
     bullets: [
-      "First industry exposure building practical software.",
-      "Company and responsibilities to be filled in.",
+      "First industry exposure at Codmetric, an IT services and consulting firm specialising in enterprise software and cloud solutions.",
+      "Gained hands-on development experience through Codmetric's immersive internship programme.",
     ],
     upcoming: false,
   },
@@ -557,7 +558,7 @@ function Experience() {
         <SectionHeading
           eyebrow="Experience"
           title="My journey so far"
-          blurb="Internships and work experience — a few details are still being filled in."
+          blurb="Internships and hands-on experience across software engineering and data."
         />
 
         <ol className="mt-12 space-y-8">
