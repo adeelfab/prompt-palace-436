@@ -348,21 +348,13 @@ function Stat({ value, label }: { value: string; label: string }) {
 }
 
 const SKILLS = {
-  web: [
-    "React",
-    "TypeScript",
-    "Node.js",
-    "Tailwind CSS",
-    "REST APIs",
-    "PostgreSQL",
-    "Git & GitHub",
-  ],
+  web: ["HTML", "CSS", "JavaScript", "React", "Node.js", "Express", "MongoDB"],
   cs: [
     "Data Structures",
     "Algorithms",
     "Problem Solving",
     "Complexity Analysis",
-    "Competitive Programming",
+    "Computer Networks",
   ],
 } as const;
 
